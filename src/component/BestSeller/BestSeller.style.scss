@@ -1,0 +1,45 @@
+.BestSeller {
+    &-Wrapper {
+        width: 100%;
+
+        .bestsale {
+            &-lable {
+                width: 100%;
+                margin: 0 auto;
+                margin-block-start: 104px;
+                margin-block-end: 56px;
+                text-align: center;
+
+                .lable {
+                    &-txt {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 30px;
+                        font-weight: 600;
+
+                        @include mobile {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                
+                @include mobile {
+                    margin-block-start: 64px;
+                    margin-block-end: 24px;
+                }
+            }
+        }
+
+        .bestSlider {
+            display: flex;
+            overflow-x: auto;
+            margin: 0 auto;
+            margin-block-start: 3rem;
+            column-gap: 10px;
+            padding-block-end: 8px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

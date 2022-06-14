@@ -1,0 +1,246 @@
+.PartnerWithUs {
+    margin: 0 auto;
+
+    .partnerUsWrapper {
+        height: 650px;
+        display: flex;
+        justify-content: center;
+
+        .top-content {
+            width: 100%;
+            max-width: 1320px;
+            position: absolute;
+            margin: 0 auto;
+            margin-block-start: 5%;
+            padding: 10% 6% 0 6%;
+            z-index: 1;
+            height: 650px;
+            background: #fff;
+            background-image: url("src/util/media/HomePageUnregisterd/Image/Backgroundleaf.png");
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: bottom;
+            background-size: contain;
+
+            .PartnerUs {
+                &-Heading {
+                    max-width: 200px;
+                    height: 80px;
+                    text-align: start;
+
+                    .Heading {
+                        &-text {
+                            font-size: 30px;
+                            font-family: "Montserrat", sans-serif;
+                            color: #000;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &-desc {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 3%;
+                    font-size: 16px;
+                    font-family: "Lato", sans-serif;
+                    margin-block-start: 2.4%;
+                    margin-block-end: 3.6%;
+                    width: 565px;
+
+                    .para {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .openAccTgr {
+                .openAcc {
+                    &-btn {
+                        width: 257px;
+                        height: 40px;
+                        background-color: #e73b25;
+                        color: #fff;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: "Lato", sans-serif;
+                        padding: 0;
+
+                        &:hover {
+                            outline: #e73b25 solid 1px;
+                            color: #e73b25;
+                            background: #fff;
+                            cursor: pointer;
+                        }
+
+                        @include mobile {
+                            width: 240px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+
+            .partnerUsimg {
+                width: 315px;
+                position: absolute;
+                inset-inline-end: 6%;
+
+                .img-cnt {
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    object-fit: contain;
+                    inset-block-start: 20%;
+                }
+
+                @include mobile {
+                    width: 315px;
+                    height: 336px;
+                    inset-inline-end: auto;
+                    inset-inline: 10%;
+                }
+            }
+        }
+    }
+
+    .cards-us {
+        background-image: url("src/util/media/HomePageUnregisterd/Image/B1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .cards-wrapper {
+            height: 447px;
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            grid-column-gap: 22px;
+            align-items: center;
+            padding-inline: 4%;
+
+            .card {
+                width: 255px;
+                height: 145px;
+                display: flex;
+                justify-content: center;
+                border-radius: 6px;
+                align-items: center;
+                background: 1px;
+                border: 1px solid #ffffff6f;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+
+                .card {
+                    &-icon-holder {
+                        min-width: 41px;
+                        padding-inline-start: 5%;
+
+                        .icon-img {
+                            object-fit: contain;
+                            width: fit-content;
+                        }
+                    }
+
+                    &-card-txt {
+                        font-size: 16px;
+                        font-weight: bold;
+                        width: 60%;
+                        padding: 0 5%;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile() {
+    .PartnerWithUs {
+        margin: 0 auto;
+        margin-block-start: 64px;
+
+        .partnerUsWrapper {
+            .top-content {
+                padding: 0 30px;
+                min-width: 315px;
+
+                .PartnerUs {
+                    &-Heading {
+                        width: min(134px, 200px);
+                        height: 50px;
+                        margin-block-end: 16px;
+                        text-align: center;
+
+                        .Heading {
+                            &-text {
+                                font-size: 20px;
+                                font-family: "Montserrat", sans-serif;
+                                color: #000;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &-desc {
+                        display: flex;
+                        flex-direction: column;
+                        column-gap: 3%;
+                        font-size: 14px;
+                        font-family: "Lato", sans-serif;
+                        margin-block-end: 24px;
+                        width: min(315px, 565px);
+
+                        .para {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cards-us {
+            .cards-wrapper {
+                height: 447px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                grid-row-gap: 16px;
+                align-items: center;
+                padding-block-start: 135px;
+
+                .card {
+                    width: 315px;
+                    height: 88px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 6px;
+                    align-items: center;
+                    background: 1px;
+                    border: 1px solid #ffffff6f;
+                    backdrop-filter: blur(8px);
+                    -webkit-backdrop-filter: blur(8px);
+
+                    .card {
+                        &-icon-holder {
+                            max-height: 48px;
+                            min-width: 48px;
+
+                            .icon-img {
+                                object-fit: contain;
+                                width: fit-content;
+                            }
+                        }
+
+                        &-card-txt {
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+.BlogCnt {
+    &-lable {
+        margin-block-start: 104px;
+        text-align: center;
+
+        .lable {
+            &-txt {
+                font-size: 30px;
+                font-weight: bold;
+                font-family: "Montserrat", sans-serif;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @include mobile {
+            margin-block-start: 64px;
+        }
+    }
+}
+
+.FromBlog {
+    margin-block-start: 56px;
+
+    .Blog {
+        &-Wrapper {
+            display: flex;
+            justify-content: center;
+            column-gap: 24px;
+            height: 350px;
+
+            .innerWrapper {
+                height: 355px;
+
+                .BlogCard {
+                    &-pic-cnt {
+                        height: 295px;
+                        border-radius: 5px;
+                    }
+
+                    &-b-content {
+                        max-width: 390px;
+                        width: 100%;
+                        height: 178px;
+                        padding: 16px;
+                        background-color: #f2faf8;
+                        position: absolute;
+                        inset-block-start: 55%;
+                        opacity: 0.95;
+                        inset-inline-end: 0;
+
+                        .content-read {
+                            display: flex;
+                            row-gap: 10px;
+                            flex-direction: column;
+                            font-family: "Lato", sans-serif;
+
+                            .blog-txt {
+                                &-date {
+                                    font-size: 14px;
+                                    color: #575757;
+                                }
+
+                                &-headline {
+                                    font-size: 16px;
+                                    font-family: "Montserrat", sans-serif;
+                                    font-weight: bold;
+                                }
+
+                                &-desc {
+                                    font-size: 14px;
+                                    color: #575757;
+                                }
+                            }
+                        }
+
+                        .moreBlog {
+                            padding: 16px 0;
+                            text-align: end;
+
+                            .blogRead {
+                                text-decoration: underline;
+                                text-underline-position: under;
+                                color: #e73b25;
+                                font-size: 14px;
+                                text-align: end;
+
+                                .more {
+                                    color: #e73b25;
+                                    font-weight: normal;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            @include mobile {
+                                padding: 0;
+                            }
+                        }
+
+                        @include mobile {
+                            max-width: 307px;
+                            height: 158px;
+                            inset-block-start: 60%;
+                        }
+                    }
+                }
+
+                @include mobile {
+                    height: 230px;
+                    width: 330px;
+                    margin-inline: auto;
+                }
+            }
+
+            @include mobile {
+                flex-direction: column;
+                margin-block-start: 54px;
+                grid-row-gap: 84px;
+                row-gap: 84px;
+                height: unset;
+            }
+        }
+    }
+
+    .showMore {
+        text-align: center;
+        margin-block-start: 46px;
+        margin-block-end: 120px;
+
+        .show-btn {
+            height: 40px;
+            width: 160px;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            color: #e73b25;
+            background: none;
+            outline: 1px solid #e73b25;
+            border: none;
+            padding: 10px 3%;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+
+            &:hover {
+                color: #fff;
+                background-color: #e73b25;
+                cursor: pointer;
+            }
+        }
+
+        @include mobile {
+            margin-block-start: 88px;
+        }
+    }
+
+    @include mobile {
+        height: 1020px;
+    }
+}
